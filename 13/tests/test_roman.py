@@ -2,6 +2,7 @@ import pytest
 from src.roman import Solution
 sol = Solution()
 
+
 @pytest.mark.parametrize("s, expected", [
     ('III', 3),
     ('IV', 4),

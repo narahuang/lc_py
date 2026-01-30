@@ -36,5 +36,5 @@ class Solution:
         # Shift all bits to the right to get final result
         for row in range(rows):
             for col in range(columns):
-                board[row][col] = board[row][col] >> 1
+                board[row][col] >>= 1
         return board

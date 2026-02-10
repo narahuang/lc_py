@@ -27,9 +27,7 @@ class Solution:
                     if board[chk_pos[0]][chk_pos[1]] % 2 == 1:
                         count += 1
                 # Assigning new status to second-last bit
-                if board[row][col] == 1 and (count < 2 or count > 3):
-                    board[row][col] = 1
-                elif board[row][col] == 0 and count == 3:
+                if board[row][col] == 0 and count == 3:
                     board[row][col] = 2
                 elif board[row][col] == 1 and (2 <= count <= 3):
                     board[row][col] = 3
